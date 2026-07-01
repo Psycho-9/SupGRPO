@@ -1,4 +1,4 @@
-# SupGRPO
+# SupGRPO: Enhancing GRPO with Matching-based Online SFT for Text Spotting
 
 This is the official PyTorch implementation of the paper: 
 **"SupGRPO: Enhancing GRPO with Matching-based Online SFT for Text Spotting"** (Accepted by **ECCV 2026**).
@@ -11,21 +11,11 @@ Recent advances in Multimodal Large Language Models (MLLMs) have demonstrated pr
 ---
 
 ## 🚀 News
-- **[2026/07]** SupGRPO is accepted by **ECCV 2026**! 🎉
+- **[2026/06]** SupGRPO is accepted by **ECCV 2026**! 🎉
 - **[2026/07]** Code and checkpoints are released.
 
 ---
 
 ## 🔧 Installation
 
-```bash
-# Clone the repository
-git clone [https://github.com/yzLi/SupGRPO.git](https://github.com/yzLi/SupGRPO.git)
-cd SupGRPO
 
-# Create environment
-conda create -n supgrpo python=3.10 -y
-conda activate supgrpo
-
-# Install dependencies
-pip install -r requirements.txt
