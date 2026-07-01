@@ -12,7 +12,6 @@ Text spotting requires both accurate text recognition and precise spatial locali
 
 ## 🚀 News
 - **[2026/06]** SupGRPO is accepted by **ECCV 2026**! 🎉
-- **[2026/07]** Code and checkpoints are released.
 
 ---
 
