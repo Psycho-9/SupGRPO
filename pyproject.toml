@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supgrpo"
+version = "0.1.0"
+description = "SupGRPO for text spotting with Qwen3-VL"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "SupGRPO authors"}]
+dependencies = [
+  "accelerate==1.10.1",
+  "deepspeed==0.15.4",
+  "numpy>=1.26",
+  "peft==0.15.2",
+  "pillow>=10.0",
+  "pyyaml>=6.0",
+  "qwen-vl-utils==0.0.14",
+  "safetensors>=0.4",
+  "torch==2.6.0",
+  "tqdm>=4.66",
+  "transformers==4.57.6",
+  "trl==0.17.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+eval = ["python-Levenshtein>=0.25"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

@@ -1,0 +1,13 @@
+# Paths are resolved relative to this YAML file.
+datasets:
+  - json_path: ../data/ats_train.json
+    sampling_strategy: all
+  - json_path: ../data/totaltext_train.json
+    sampling_strategy: all
+  - json_path: ../data/ic15_train.json
+    sampling_strategy: all
+  - json_path: ../data/ctw1500_train.json
+    sampling_strategy: all
+  - json_path: ../data/rects_train.json
+    sampling_strategy: all
+

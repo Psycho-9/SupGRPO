@@ -209,6 +209,17 @@ tempCodeRunnerFile.py
 # PyPI configuration file
 .pypirc
 
+# SupGRPO local artifacts
+models/
+outputs/
+evaluation/results/
+data/*.json
+data/images/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
 # Marimo
 marimo/_static/
 marimo/_lsp/
