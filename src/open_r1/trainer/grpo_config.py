@@ -142,6 +142,13 @@ class GRPOConfig(TrainingArguments):
             installed, it prints the sample. If `wandb` logging is enabled, it logs it to `wandb`.
     """
 
+    # TRL 0.17 resolves TrainingArguments.deepspeed's Union[dict, str, None]
+    # to dict when building the CLI, which rejects normal JSON file paths.
+    deepspeed: Optional[str] = field(
+        default=None,
+        metadata={"help": "Relative path to a DeepSpeed JSON configuration file."},
+    )
+
     # Parameters that control the model and reference model
     model_init_kwargs: Optional[dict] = field(
         default=None,

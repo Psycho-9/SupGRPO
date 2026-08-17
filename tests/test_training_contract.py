@@ -4,7 +4,10 @@ from pathlib import Path
 
 import torch
 from torch import nn
+from trl import TrlParser
 
+from open_r1.train import SupGRPOModelConfig, SupGRPOScriptArguments
+from open_r1.trainer import GRPOConfig
 from open_r1.trainer.grpo_trainer import VLMGRPOTrainer
 
 
@@ -29,6 +32,12 @@ def test_paper_hyperparameters_are_explicit():
 def test_zero3_config_is_valid():
     config = json.loads((ROOT / "configs" / "zero3.json").read_text(encoding="utf-8"))
     assert config["zero_optimization"]["stage"] == 3
+
+
+def test_deepspeed_cli_accepts_relative_config_path():
+    parser = TrlParser((SupGRPOScriptArguments, GRPOConfig, SupGRPOModelConfig))
+    action = next(action for action in parser._actions if action.dest == "deepspeed")
+    assert action.type is str
 
 
 def test_qwen_patch_slicing_tracks_sequence_ranges():
