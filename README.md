@@ -10,13 +10,9 @@ combines GRPO with matching-based online SFT applied only to coordinate tokens.
 The implementation contains the four paper rewards (format, multiset word F1,
 IoU precision, and IoU recall) and the coordinate-token SFT objective.
 
-This repository contains the clean model-training and evaluation path. Training
-reads only the configured training JSON files. Datasets and model weights are
-not included in Git.
-
 ## News
 
-- **2026/06:** SupGRPO was accepted by ECCV 2026.
+- **2026/06:** SupGRPO was accepted by ECCV 2026 Poster.
 
 ## Installation
 
@@ -30,10 +26,6 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -e '.[test,eval]'
 ```
-
-The tested core versions are PyTorch 2.6.0, Transformers 4.57.6, TRL 0.17.0,
-PEFT 0.15.2, Accelerate 1.10.1, and DeepSpeed 0.15.4. Install the PyTorch wheel
-matching the local CUDA driver when the default package index is unsuitable.
 
 ## Preparation
 
