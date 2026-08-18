@@ -63,27 +63,6 @@ coordinates back to pixels, and reports recognition F1, detection F1, and
 end-to-end Hmean for ATS, Total-Text, ICDAR 2015, and CTW1500. Results are saved
 under `evaluation/results/`.
 
-## Tests
-
-```bash
-pytest -q
-bash -n scripts/*.sh
-```
-
-The tests cover the four rewards, the paper hyperparameter contract, the
-Qwen-VL multimodal slicing logic, and the repository release boundary.
-
-## Repository Layout
-
-```text
-configs/                 Training data and DeepSpeed configurations
-data/                    Dataset schema (datasets are not redistributed)
-evaluation/              Inference and official metric pipeline
-scripts/                 Train, evaluate, and LoRA merge entry points
-src/open_r1/             SupGRPO trainer and Qwen3-VL rewards
-tests/                   Unit and release-contract tests
-```
-
 ## Acknowledgements
 
 This implementation builds on Hugging Face Transformers, TRL, PEFT, DeepSpeed,
