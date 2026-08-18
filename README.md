@@ -1,7 +1,7 @@
 # SupGRPO: Enhancing GRPO with Matching-based Online SFT for Text Spotting
 
 This is the official PyTorch implementation of **"SupGRPO: Enhancing GRPO
-with Matching-based Online SFT for Text Spotting"**, accepted by **ECCV 2026**.
+with Matching-based Online SFT for Text Spotting"**, accepted by **ECCV 2026 Poster**.
 
 ## Overview
 
